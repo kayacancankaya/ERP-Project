@@ -1,0 +1,15 @@
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Data\bin\Debug\net6.0-windows\Layer_1_Data.deps.json
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Data\bin\Debug\net6.0-windows\Layer_1_Data.dll
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Data\bin\Debug\net6.0-windows\Layer_1_Data.pdb
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Data\bin\Debug\net6.0-windows\Layer_2_Common.dll
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Data\bin\Debug\net6.0-windows\Layer_2_Common.pdb
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Data\obj\Debug\net6.0-windows\Layer_1_Data.csproj.AssemblyReference.cache
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Data\obj\Debug\net6.0-windows\Layer_1_Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Data\obj\Debug\net6.0-windows\Layer_1_Data.AssemblyInfoInputs.cache
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Data\obj\Debug\net6.0-windows\Layer_1_Data.AssemblyInfo.cs
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Data\obj\Debug\net6.0-windows\Layer_1_Data.csproj.CoreCompileInputs.cache
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Data\obj\Debug\net6.0-windows\Layer_1_Data.csproj.CopyComplete
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Data\obj\Debug\net6.0-windows\Layer_1_Data.dll
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Data\obj\Debug\net6.0-windows\refint\Layer_1_Data.dll
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Data\obj\Debug\net6.0-windows\Layer_1_Data.pdb
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Data\obj\Debug\net6.0-windows\ref\Layer_1_Data.dll
