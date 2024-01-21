@@ -1516,20 +1516,13 @@ namespace Layer_Data
 
         static private string GetConnectionStringLTD(int yil)
         {
-            // To avoid storing the connection string in your code,
-            // you can retrieve it from a configuration file.
-            return "Data Source=192.168.1.11;Initial Catalog=VITALTD" + yil + ";Persist Security Info=True;User ID=sa;Password=sapass;TrustServerCertificate=true;";
         }
         static private string GetConnectionStringAhsap(int yil)
         {
             yil = yil % 100;
-            return "Data Source=192.168.1.11;Initial Catalog=VITAHSAPLTD" + yil + ";Persist Security Info=True;User ID=sa;Password=sapass;TrustServerCertificate=true;";
         }
         static private string GetConnectionString(int yil)
         {
-            // To avoid storing the connection string in your code,
-            // you can retrieve it from a configuration file.
-            return "Data Source=192.168.1.11;Initial Catalog=VITA" + yil + ";Persist Security Info=True;User ID=sa;Password=sapass;TrustServerCertificate=true;";
         }
     }
 }
