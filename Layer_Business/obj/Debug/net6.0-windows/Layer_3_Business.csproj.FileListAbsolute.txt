@@ -1,0 +1,5 @@
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_3_Business.csproj.AssemblyReference.cache
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_3_Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_3_Business.AssemblyInfoInputs.cache
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_3_Business.AssemblyInfo.cs
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_3_Business.csproj.CoreCompileInputs.cache

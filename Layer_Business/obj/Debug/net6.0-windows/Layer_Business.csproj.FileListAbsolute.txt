@@ -1,0 +1,187 @@
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.deps.json
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.dll
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.dll
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.pdb
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.pdb
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.AssemblyReference.cache
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfoInputs.cache
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfo.cs
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CoreCompileInputs.cache
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CopyComplete
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\refint\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\kayac\OneDrive\Desktop\c#\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\ref\Layer_Business.dll
+C:\Users\kayac\Downloads\ERP Proje\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.deps.json
+C:\Users\kayac\Downloads\ERP Proje\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\kayac\Downloads\ERP Proje\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\kayac\Downloads\ERP Proje\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.dll
+C:\Users\kayac\Downloads\ERP Proje\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.dll
+C:\Users\kayac\Downloads\ERP Proje\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.pdb
+C:\Users\kayac\Downloads\ERP Proje\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.pdb
+C:\Users\kayac\Downloads\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.AssemblyReference.cache
+C:\Users\kayac\Downloads\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kayac\Downloads\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfoInputs.cache
+C:\Users\kayac\Downloads\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfo.cs
+C:\Users\kayac\Downloads\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CoreCompileInputs.cache
+C:\Users\kayac\Downloads\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CopyComplete
+C:\Users\kayac\Downloads\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\kayac\Downloads\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\refint\Layer_Business.dll
+C:\Users\kayac\Downloads\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\kayac\Downloads\ERP Proje\Layer_Business\obj\Debug\net6.0-windows\ref\Layer_Business.dll
+\\192.168.1.11\Netsis\ERP Proje 1.0.1\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.deps.json
+\\192.168.1.11\Netsis\ERP Proje 1.0.1\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.dll
+\\192.168.1.11\Netsis\ERP Proje 1.0.1\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.pdb
+\\192.168.1.11\Netsis\ERP Proje 1.0.1\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.dll
+\\192.168.1.11\Netsis\ERP Proje 1.0.1\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.dll
+\\192.168.1.11\Netsis\ERP Proje 1.0.1\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.pdb
+\\192.168.1.11\Netsis\ERP Proje 1.0.1\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.pdb
+\\192.168.1.11\Netsis\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.AssemblyReference.cache
+\\192.168.1.11\Netsis\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.GeneratedMSBuildEditorConfig.editorconfig
+\\192.168.1.11\Netsis\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfoInputs.cache
+\\192.168.1.11\Netsis\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfo.cs
+\\192.168.1.11\Netsis\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CoreCompileInputs.cache
+\\192.168.1.11\Netsis\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CopyComplete
+\\192.168.1.11\Netsis\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.dll
+\\192.168.1.11\Netsis\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\refint\Layer_Business.dll
+\\192.168.1.11\Netsis\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.pdb
+\\192.168.1.11\Netsis\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\ref\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.1\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.deps.json
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.1\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.1\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.1\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.1\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.1\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.1\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.AssemblyReference.cache
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfoInputs.cache
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfo.cs
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CoreCompileInputs.cache
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CopyComplete
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\refint\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.1\Layer_Business\obj\Debug\net6.0-windows\ref\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.2\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.deps.json
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.2\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.2\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.2\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.2\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.2\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.2\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.2\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.AssemblyReference.cache
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.2\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.2\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfoInputs.cache
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.2\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfo.cs
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.2\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CoreCompileInputs.cache
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.2\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CopyComplete
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.2\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.2\Layer_Business\obj\Debug\net6.0-windows\refint\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.2\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.2\Layer_Business\obj\Debug\net6.0-windows\ref\Layer_Business.dll
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.3\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.AssemblyReference.cache
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.3\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.3\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfoInputs.cache
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.3\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfo.cs
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.3\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CoreCompileInputs.cache
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.3\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.deps.json
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.3\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.3\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.3\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.dll
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.3\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.dll
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.3\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.pdb
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.3\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.pdb
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.3\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CopyComplete
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.3\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.3\Layer_Business\obj\Debug\net6.0-windows\refint\Layer_Business.dll
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.3\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.3\Layer_Business\obj\Debug\net6.0-windows\ref\Layer_Business.dll
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.4\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.deps.json
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.4\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.4\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.4\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.dll
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.4\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.dll
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.4\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.pdb
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.4\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.pdb
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.AssemblyReference.cache
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfoInputs.cache
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfo.cs
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CoreCompileInputs.cache
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CopyComplete
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\refint\Layer_Business.dll
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\KONFEKSIYON\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\ref\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.4\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.deps.json
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.4\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.4\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.4\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.4\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.4\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.4\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.AssemblyReference.cache
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfoInputs.cache
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfo.cs
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CoreCompileInputs.cache
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CopyComplete
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\refint\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.4\Layer_Business\obj\Debug\net6.0-windows\ref\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.5\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.deps.json
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.5\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.5\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.5\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.5\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.5\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.5\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.5\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.AssemblyReference.cache
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.5\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.5\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfoInputs.cache
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.5\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfo.cs
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.5\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CoreCompileInputs.cache
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.5\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CopyComplete
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.5\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.5\Layer_Business\obj\Debug\net6.0-windows\refint\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.5\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.5\Layer_Business\obj\Debug\net6.0-windows\ref\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.6\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.deps.json
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.6\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.6\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.6\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.6\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.6\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.6\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.6\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.AssemblyReference.cache
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.6\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.6\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfoInputs.cache
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.6\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfo.cs
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.6\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CoreCompileInputs.cache
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.6\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CopyComplete
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.6\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.6\Layer_Business\obj\Debug\net6.0-windows\refint\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.6\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.6\Layer_Business\obj\Debug\net6.0-windows\ref\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.7\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.deps.json
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.7\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.7\Layer_Business\bin\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.7\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.7\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.7\Layer_Business\bin\Debug\net6.0-windows\Layer_2_Common.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.7\Layer_Business\bin\Debug\net6.0-windows\Layer_Data.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.7\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.AssemblyReference.cache
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.7\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.7\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfoInputs.cache
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.7\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.AssemblyInfo.cs
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.7\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CoreCompileInputs.cache
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.7\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.csproj.CopyComplete
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.7\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.7\Layer_Business\obj\Debug\net6.0-windows\refint\Layer_Business.dll
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.7\Layer_Business\obj\Debug\net6.0-windows\Layer_Business.pdb
+C:\Users\kayac\OneDrive\Desktop\ERP Proje 1.0.7\Layer_Business\obj\Debug\net6.0-windows\ref\Layer_Business.dll
