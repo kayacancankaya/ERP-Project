@@ -1,0 +1,289 @@
+﻿<Window x:Class="Layer_UI.Konfeksiyon.Frm_Siparis_Durumu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        xmlns:vm="clr-namespace:Layer_Business;assembly=Layer_Business"
+        xmlns:uc="clr-namespace:Layer_UI.UserControls"
+        WindowStyle="None"
+        ResizeMode="CanResize"
+        WindowState="Maximized" MinWidth="930"   
+        WindowStartupLocation="CenterScreen"
+        MouseDown="mousedown_Window"
+        Background="Transparent"
+        AllowsTransparency="True">
+
+    <Border CornerRadius="50">
+        <Border.Background>
+            <ImageBrush ImageSource="\\192.168.1.11\Netsis\Images\vbBg.jpeg"/>
+        </Border.Background>
+        <Border CornerRadius="50"
+            BorderThickness="2"
+            Opacity="0.95">
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="{StaticResource b_r_four_color}" Offset="0"/>
+                    <GradientStop Color="{StaticResource b_r_four_contrast}" Offset="0.5"/>
+                    <GradientStop Color="{StaticResource b_r_four_color}" Offset="1"/>
+
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,1">
+                    <GradientStop Color="{StaticResource b_r_one_color}" Offset="0"/>
+                    <GradientStop Color="{StaticResource b_r_one_color_lighter}" Offset="0.75"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid  VerticalAlignment="Top"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".1*"/>
+                    <ColumnDefinition Width=".1*"/>
+                    <ColumnDefinition Width=".1*"/>
+                    <ColumnDefinition Width=".1*"/>
+                    <ColumnDefinition Width=".1*"/>
+                    <ColumnDefinition Width=".1*"/>
+                    <ColumnDefinition Width=".1*"/>
+                    <ColumnDefinition Width=".1*"/>
+                    <ColumnDefinition Width=".1*"/>
+                    <ColumnDefinition Width=".1*"/>
+                </Grid.ColumnDefinitions>
+                <uc:UserControl_Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="9" Margin="25 10 -90 10" 
+                                     x:Name="menu_top_bar" Title="SİPARİŞ DURUMU" />
+
+                <Label Content="Sipariş Durumu" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Center" 
+               Grid.Row="1"
+               Grid.Column="0"
+               Grid.ColumnSpan="10"
+               Style="{StaticResource CustomLabelStyle3_24_b}"/>
+
+                <WrapPanel Margin="0,10,110,0" HorizontalAlignment="Center" 
+                    Grid.Row="2" Grid.Column="0" 
+                    Orientation="Horizontal"
+                    Grid.ColumnSpan="10">
+                    <Label Content="Sipariş No:" 
+                   Style="{StaticResource CustomLabelStyle4_16_b}"
+                           Margin="35 0 10 0"
+                           Padding="0"/>
+                    <TextBox x:Name="txt_siparis_no" Style="{StaticResource TextBoxStyle1}"
+                             Width="120" 
+                             Height="23"
+                             />
+                    <Label Content="Sipariş Satır:" 
+                   Style="{StaticResource CustomLabelStyle4_16_b}"
+                           Margin="35 0 10 0"
+                           Padding="0"/>
+                    <TextBox x:Name="txt_siparis_satir" Style="{StaticResource TextBoxStyle1}"
+                             Width="140"
+                             Height="23"/>
+                    <Label Content="Takip No:" 
+                   Style="{StaticResource CustomLabelStyle4_16_b}"
+                           Margin="35 0 10 0"
+                           Padding="0"/>
+                    <TextBox x:Name="txt_takip_no" Style="{StaticResource TextBoxStyle1}"
+                             Width="120" 
+                             Height="23"
+                             />
+                    <Label Content="Stok Kodu:" 
+                   Style="{StaticResource CustomLabelStyle4_16_b}"
+                           Margin="35 0 10 0"
+                           Padding="0"/>
+                    <TextBox x:Name="txt_stok_kodu" Style="{StaticResource TextBoxStyle1}"
+                             Width="140"
+                             Height="23"/>
+                    <Label Content="Stok Adı:" 
+                   Style="{StaticResource CustomLabelStyle4_16_b}"/>
+                    <TextBox x:Name="txt_stok_adi" Style="{StaticResource TextBoxStyle1}"
+                             Width="200"
+                             Height="23"/>
+
+                </WrapPanel>
+                <StackPanel Orientation="Vertical"
+                            Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="10">
+                            <StackPanel 
+                                                Orientation="Horizontal" VerticalAlignment="Center"
+                                                HorizontalAlignment="Center">
+                                <CheckBox IsChecked="True"
+                                                  x:Name="cb_kapali_siparis_gosterme"
+                                                  Style="{StaticResource CheckBoxStyle1}"/>
+                                <TextBlock Text="Kapalı Siparişleri Gösterme"
+                                                   Margin="15 0 0 0"
+                                                   Style="{StaticResource TextBlockStyle_18_Bold4}"/>
+                                <CheckBox IsChecked="True"
+                                                  Style="{StaticResource CheckBoxStyle1}"
+                                                  x:Name="cb_uretilenleri_gosterme"
+                                                  Margin="30 0 0 0"/>
+                                <TextBlock Text="Üretilenleri Gösterme"
+                                                   Margin="15 0 0 0"
+                                                   Style="{StaticResource TextBlockStyle_18_Bold4}"/>
+
+                            </StackPanel>
+                    
+                            <StackPanel>
+                                <Button HorizontalAlignment="Center"
+                                        Content="Listele"
+                                        Padding="35,5"
+                                        Style="{StaticResource CustomButtonStyle}"
+                                        Click="listele_click"
+                                        x:Name="Listele"
+                                        />
+                            </StackPanel>
+                    
+                </StackPanel>
+
+                <WrapPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="10" Margin="0,20,0,0"
+                           HorizontalAlignment="Center">
+
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="20,5,0,0">
+                        <CheckBox IsChecked="True" x:Name="cb_siparis"
+                                  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"
+                                  Style="{StaticResource CheckBoxStyle1}"/>
+                        <TextBlock Style="{StaticResource TextBlockStyle1}"
+                                   Text="Sipariş" Margin="5,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="20,5,0,0">
+                        <CheckBox IsChecked="True" x:Name="cb_planlama"
+                                  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"
+                                  Style="{StaticResource CheckBoxStyle1}"/>
+                        <TextBlock Style="{StaticResource TextBlockStyle1}"
+                                   Text="Plan Noları" Margin="5,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    
+                  
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="20,5,0,0">
+                        <CheckBox IsChecked="True" x:Name="cb_iskelet"
+                                  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"
+                                  Style="{StaticResource CheckBoxStyle1}"/>
+                        <TextBlock Style="{StaticResource TextBlockStyle1}"
+                                   Text="İskelet" Margin="5,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="20,5,0,0">
+                        <CheckBox IsChecked="True" x:Name="cb_kumas"
+                                  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"
+                                  Style="{StaticResource CheckBoxStyle1}"/>
+                        <TextBlock Style="{StaticResource TextBlockStyle1}"
+                                   Text="Kumaş" Margin="5,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="20,5,0,0">
+                        <CheckBox IsChecked="True" x:Name="cb_konfeksiyon"
+                                  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"
+                                  Style="{StaticResource CheckBoxStyle1}"/>
+                        <TextBlock Style="{StaticResource TextBlockStyle1}"
+                                   Text="Konfeksiyon" Margin="5,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                   
+                   
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="20,5,0,0">
+                        <CheckBox IsChecked="True" x:Name="cb_doseme"
+                                  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"
+                                  Style="{StaticResource CheckBoxStyle1}"/>
+                        <TextBlock Style="{StaticResource TextBlockStyle1}"
+                                   Text="Döşeme" Margin="5,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="20,5,0,0">
+                        <CheckBox IsChecked="True" x:Name="cb_paket"
+                                  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"
+                                  Style="{StaticResource CheckBoxStyle1}"/>
+                        <TextBlock Style="{StaticResource TextBlockStyle1}"
+                                   Text="Paket" Margin="5,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </WrapPanel>
+
+                <DataGrid AutoGenerateColumns="False" 
+                  Grid.Row="5" 
+                  Grid.Column="0" 
+                  Grid.ColumnSpan="10"
+                  Margin="30 10"
+                  x:Name="dg_genel_durum"
+                  VerticalScrollBarVisibility="Visible">
+
+                    <DataGrid.ColumnHeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="ContentTemplate">
+                                <Setter.Value>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Content, RelativeSource={RelativeSource TemplatedParent}}"
+                                   TextWrapping="Wrap"
+                                   
+                                   />
+                                    </DataTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DataGrid.ColumnHeaderStyle>
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Sip No" Width="120"  Binding="{Binding fisno}">
+
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Sip Sira" Width="30" Binding="{Binding stra_sipkont}">
+
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Sip Durum" Width="50" Binding="{Binding sthar_htur}">
+
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Takip No" Width="60"  Binding="{Binding TakipNo}">
+
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="İşemri No" Width="110"  Binding="{Binding IsemriNo}">
+
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Ürün Kodu" Width="120"  Binding = "{Binding UrunKodu}">
+
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Ürün Adı" Width="*" Binding = "{Binding  UrunAdi}">
+
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Sip Mik" Width="30" Binding = "{Binding  siparis_miktar}">
+
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="İskelet Toplam" Width="50" Binding = "{Binding IskeletToplam}">
+
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="İskelet Kalan" Width="50" Binding = "{Binding IskeletKalan}">
+
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Kumaş Toplam" Width="50" Binding = "{Binding KumasToplam}">
+
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Kumaş Kalan" Width="50" Binding = "{Binding KumasKalan}">
+
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Konfeksiyon Toplam" Width="50" Binding = "{Binding KonfeksiyonToplam }">
+
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Konfeksiyon Kalan" Width="50" Binding = "{Binding KonfeksiyonKalan }">
+
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Döşenmiş Toplam" Width="50" Binding = "{Binding DosenmisToplam}">
+
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Döşenmiş Kalan" Width="50" Binding = "{Binding DosenmisKalan}">
+
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Paket Toplam" Width="50" Binding = "{Binding PaketToplam}">
+
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Paket Kalan" Width="50" Binding = "{Binding PaketKalan}">
+
+                        </DataGridTextColumn>
+                    </DataGrid.Columns>
+
+                </DataGrid>
+
+
+            </Grid>
+        </Border>
+    </Border>
+</Window>
+

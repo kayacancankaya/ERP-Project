@@ -1,0 +1,318 @@
+﻿<Window x:Class="Layer_UI.Login.Frm_Ilk_Kayit"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Layer_UI.Login"
+        xmlns:vm="clr-namespace:Layer_Business;assembly=Layer_Business"
+        mc:Ignorable="d"
+        Title="frm_Login" Height="500" Width="800"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        MouseDown="mousedown_Window"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Window.Resources>
+        <vm:LoginLogic x:Key="vm_Login_Logic"/>
+    </Window.Resources>
+    <Border CornerRadius="50">
+        <Border.Background>
+            <ImageBrush ImageSource="\\192.168.1.11\Netsis\Images\vbBg.jpeg"/>
+        </Border.Background>
+        <Border CornerRadius="50"
+            BorderThickness="2"
+            Opacity="0.95">
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="{StaticResource b_r_four_color}" Offset="0"/>
+                    <GradientStop Color="{StaticResource b_r_four_contrast}" Offset="0.5"/>
+                    <GradientStop Color="{StaticResource b_r_four_color}" Offset="1"/>
+
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,1">
+                    <GradientStop Color="{StaticResource b_r_one_color}" Offset="0"/>
+                    <GradientStop Color="{StaticResource b_r_one_color_lighter}" Offset="0.75"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid Margin="30,5" DataContext="{StaticResource vm_Login_Logic}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="25"/>
+                    <ColumnDefinition Width="25"/>
+                    <ColumnDefinition Width="5"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock 
+                Text="İLK KAYIT"
+                Foreground="{StaticResource b_r_three}"
+                FontSize="12"
+                FontFamily="Montserrat"
+                FontWeight="Bold"
+                Grid.Column="0"
+                VerticalAlignment="Center"
+                Margin="10,0,0,0"/>
+                <Button x:Name="btn_minimize"
+                        BorderThickness="0"
+                        FontFamily="Montserrat"
+                        FontWeight="Bold"
+                        Cursor="Hand"
+                        Grid.Column="1"
+                        Content="-"
+                        Click="btn_minimize_click">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="{StaticResource b_r_four}"/>
+                            <Setter Property="Foreground" Value="{StaticResource b_r_three}"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="{StaticResource b_r_four_darker}"/>
+                                    <Setter Property="Foreground" Value="{StaticResource b_r_three_lighter}"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="18" Height="18"
+                                    CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button x:Name="btn_close"
+                        FontFamily="Montserrat"
+                        FontWeight="Bold"
+                        Cursor="Hand"
+                        Grid.Column="2"
+                        Content="x"
+                        Click="btn_close_click">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="{StaticResource b_r_red}"/>
+                            <Setter Property="Foreground" Value="{StaticResource b_r_three}"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="{StaticResource b_r_red_darker}"/>
+                                    <Setter Property="Foreground" Value="{StaticResource b_r_three_lighter}"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="18" Height="18"
+                                    CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <StackPanel Width="250"
+                            Grid.Row="2"
+                            Orientation="Vertical"
+                            Margin="55,20,0,0"
+                            >
+
+                    <Image Source="\\192.168.1.11\Netsis\Images\vb.png" Width="100" Height="100"/>
+                    <TextBlock Text="Vita Bianca"
+                               FontSize="20"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               HorizontalAlignment="Center"
+                               Background="Transparent"
+                               Foreground="{StaticResource b_r_three_lighter}"
+                               Margin="0,11,0,0"/>
+                    <TextBlock Text="Kullanıcı"
+                               FontSize="13"
+                               FontWeight="Bold"
+                               FontFamily="Montserrat"
+                               HorizontalAlignment="Left"
+                               Background="Transparent"
+                               Foreground="{StaticResource b_r_three}"
+                               Margin="0,10,0,0"/>
+                    <TextBox x:Name="txt_user_name"
+                             FontWeight="Bold"
+                             FontFamily="Montserrat"
+                             HorizontalAlignment="Left"
+                             Foreground="{StaticResource b_r_three}"
+                             CaretBrush="{StaticResource b_r_five}"
+                             BorderBrush="{StaticResource b_r_five}"
+                             BorderThickness="0,0,0,2"
+                             FontSize="13"
+                             Height="16"
+                             Width="250"
+                             VerticalContentAlignment="Center"
+                             Margin="0,5,0,0"
+                             Padding="20,0,0,0"
+                             SnapsToDevicePixels="True">
+                        <TextBox.Background>
+                            <ImageBrush ImageSource="\\192.168.1.11\Netsis\Images\User_Icon.png"
+                                        Stretch="Uniform"
+                                        AlignmentX="Left"/>
+                        </TextBox.Background>
+                    </TextBox>
+                    <TextBlock Text="Şifre"
+                               FontSize="13"
+                               FontWeight="Bold"
+                               FontFamily="Montserrat"
+                               HorizontalAlignment="Left"
+                               Background="Transparent"
+                               Foreground="{StaticResource b_r_three}"
+                               Margin="0,10,0,0"/>
+                    <PasswordBox x:Name="txt_password"
+                             FontWeight="Bold"
+                             FontFamily="Montserrat"
+                             HorizontalAlignment="Left"
+                             Foreground="{StaticResource b_r_three}"
+                             CaretBrush="{StaticResource b_r_five}"
+                             BorderBrush="{StaticResource b_r_five}"
+                             BorderThickness="0,0,0,2"
+                             FontSize="13"
+                             Height="16"
+                             Width="250"
+                             VerticalContentAlignment="Center"
+                             Margin="0,5,0,0"
+                             Padding="20,0,0,0"
+                             SnapsToDevicePixels="True">
+                        <PasswordBox.Background>
+                            <ImageBrush ImageSource="\\192.168.1.11\Netsis\Images\password.png"
+                                        Stretch="Uniform"
+                                        AlignmentX="Left"/>
+                        </PasswordBox.Background>
+                    </PasswordBox>
+                    <TextBlock Text="Departman"
+                               FontSize="13"
+                               FontWeight="Bold"
+                               FontFamily="Montserrat"
+                               HorizontalAlignment="Left"
+                               Background="Transparent"
+                               Foreground="{StaticResource b_r_three}"
+                               Margin="0,10,0,0"/>
+                    <ComboBox x:Name="txt_departman"
+                             FontWeight="Bold"
+                             FontFamily="Montserrat"
+                             HorizontalAlignment="Left"
+                             Foreground="{StaticResource b_r_two}"
+                             BorderBrush="{StaticResource b_r_five}"
+                             BorderThickness="0,0,0,2"
+                             FontSize="13"
+                             Height="16"
+                             Width="250"
+                             VerticalContentAlignment="Center"
+                             Margin="0,5,0,0"
+                             Padding="20,0,0,0"
+                             SnapsToDevicePixels="True">
+                        <ComboBox.Background>
+                            <ImageBrush ImageSource="\\192.168.1.11\Netsis\Images\department.png"
+                                        Stretch="Uniform"
+                                        AlignmentX="Left"/>
+                        </ComboBox.Background>
+
+                        
+                        <ComboBoxItem Content="Ahsap Planlama" />
+                        <ComboBoxItem Content="Ahsap Kalite" />
+                        <ComboBoxItem Content="Ar-Ge"/>
+                        <ComboBoxItem Content="Bilgi Islem"/>
+                        <ComboBoxItem Content="Finans"/>
+                        <ComboBoxItem Content="Insan Kaynaklari"/>
+                        <ComboBoxItem Content="Konfeksiyon"/>
+                        <ComboBoxItem Content="Moduler Planlama"/>
+                        <ComboBoxItem Content="Dosemeli Planlama"/>
+                        <ComboBoxItem Content="Satin Alma"/>
+                        <ComboBoxItem Content="Satis"/>
+                        <ComboBoxItem Content="Yonetim"/>
+                        <ComboBoxItem Content="Doseme Kalite"/>
+                        <ComboBoxItem Content="Lojistik"/>
+                        <ComboBoxItem Content="Depo" />
+
+                    </ComboBox>
+
+                    <TextBlock Text="Email"
+                               FontSize="13"
+                               FontWeight="Bold"
+                               FontFamily="Montserrat"
+                               HorizontalAlignment="Left"
+                               Background="Transparent"
+                               Foreground="{StaticResource b_r_three}"
+                               Margin="0,10,0,0"/>
+                    <TextBox x:Name="txt_email"
+                             FontWeight="Bold"
+                             FontFamily="Montserrat"
+                             HorizontalAlignment="Left"
+                             Foreground="{StaticResource b_r_three}"
+                             CaretBrush="{StaticResource b_r_five}"
+                             BorderBrush="{StaticResource b_r_five}"
+                             BorderThickness="0,0,0,2"
+                             FontSize="13"
+                             Height="16"
+                             Width="250"
+                             VerticalContentAlignment="Center"
+                             Margin="0,5,0,0"
+                             Padding="20,0,0,0"
+                             SnapsToDevicePixels="True">
+                        <TextBox.Background>
+                            <ImageBrush ImageSource="\\192.168.1.11\Netsis\Images\email.png"
+                                        Stretch="Uniform"
+                                        AlignmentX="Left"/>
+                        </TextBox.Background>
+                    </TextBox>
+
+                    <Button x:Name="btn_giris"
+                        BorderThickness="0"
+                        FontFamily="Montserrat"
+                        FontWeight="Bold"
+                        Cursor="Hand"
+                        Grid.Column="2"
+                        Content="Kaydet"
+                        Click="btn_kaydet_click"
+                        Margin="0,15,0,0">
+
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="{StaticResource b_r_four}"/>
+                                    <Setter Property="Foreground" Value="{StaticResource b_r_three}"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="{StaticResource b_r_four_darker}"/>
+                                            <Setter Property="Foreground" Value="{StaticResource b_r_three_lighter}"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="100" Height="22"
+                                        CornerRadius="9"
+                                        Background="{TemplateBinding Background}">
+                                        <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    <Button Content="Giriş Sayfası"
+                               HorizontalAlignment="Left"
+                               Margin="0,10,0,0"
+                               Style="{StaticResource ButtonStyleTransperentPlainText13bold}"
+                               Click="btn_giris_sayfasi_clicked"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Border>
+
+</Window>

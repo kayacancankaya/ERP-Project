@@ -1,0 +1,32 @@
+﻿<Window x:Class="Layer_UI.Planlama_Moduler.Simulasyon.Wait.Wait_Simulasyon_Calculating"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Layer_UI.Planlama_Moduler.Simulasyon.Wait"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Simülasyon Hesaplat..." Height="90" Width="330">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="1" 
+                    Background="Aqua"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <TextBlock x:Name="txt_wait" Text="Simülasyon Hesaplanıyor, Lütfen Bekleyiniz..."
+                        Visibility="Collapsed" Style="{StaticResource TextBlockStyle_16_Bold_3_light}"
+                       
+                       Foreground="Black"/>
+            <Button x:Name="btn_hesaplat" Click="btn_hesaplat_clicked"
+                    Content="Hesapla" Style="{StaticResource ButtonSyle43l1_12_Montserrat}"
+                    Width="100"/>
+        </StackPanel>
+    </Grid>
+</Window>

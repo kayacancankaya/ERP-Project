@@ -1,0 +1,197 @@
+﻿<Window x:Class="Layer_UI.Konfeksiyon.Frm_Bildirim_Guncelle"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:uc="clr-namespace:Layer_UI.UserControls"
+        xmlns:vm="clr-namespace:Layer_Business;assembly=Layer_Business"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        ResizeMode="CanResize"
+        WindowState="Maximized" MinWidth="930"   
+        WindowStartupLocation="CenterScreen"
+        MouseDown="mousedown_Window"
+        Background="Transparent"
+        AllowsTransparency="True">
+
+    <Window.Resources>
+        <vm:Cls_Isemri x:Key="cls_isemri"/>
+    </Window.Resources>
+
+    <Border CornerRadius="50">
+        <Border.Background>
+            <ImageBrush ImageSource="\\192.168.1.11\Netsis\Images\vbBg.jpeg"/>
+        </Border.Background>
+        <Border CornerRadius="50"
+            BorderThickness="2"
+            Opacity="0.95">
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="{StaticResource b_r_four_color}" Offset="0"/>
+                    <GradientStop Color="{StaticResource b_r_four_contrast}" Offset="0.5"/>
+                    <GradientStop Color="{StaticResource b_r_four_color}" Offset="1"/>
+
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,1">
+                    <GradientStop Color="{StaticResource b_r_one_color}" Offset="0"/>
+                    <GradientStop Color="{StaticResource b_r_one_color_lighter}" Offset="0.75"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="55"/>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="5"/>
+                </Grid.ColumnDefinitions>
+
+                <uc:UserControl_Menu Grid.Row="0" Grid.Column="1" Margin="20 10" 
+                                     x:Name="menu_top_bar" Title="BİLDİRİM GÜNCELLE" />
+
+                <Label Content="Üretim Bildirimi" 
+                       HorizontalAlignment="Center" 
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       Style="{StaticResource CustomLabelStyle3_24_b}" Margin="0 10 0 0"/>
+
+                <StackPanel Margin="0,0,0,0" HorizontalAlignment="Center" 
+                            Grid.Row="2" Grid.Column="1" 
+                            Orientation="Horizontal">
+                    
+                    <Label Content="Takip No:" Width="160"
+                    Style="{StaticResource CustomLabelStyle4_18_b}"
+                    Margin="0 0 20 0"/>
+                    <Label Content="Ürün Kodu:" Width="160"
+                    Style="{StaticResource CustomLabelStyle4_18_b}"
+                    Margin="0 0 20 0"/>
+                    <Label Content="Ham Adı:"  Width="300"
+                               Style="{StaticResource CustomLabelStyle4_18_b}"
+                           Margin="0 0 20 0"/>
+
+                    <Label Content="Metre:"  Width="70"
+                               Style="{StaticResource CustomLabelStyle4_18_b}"
+                           Margin="0 0 0 0"/>
+
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 0" HorizontalAlignment="Center" 
+                            Grid.Row="3" Grid.Column="1" 
+                            Orientation="Horizontal">
+                    <TextBox x:Name="txt_takip_no" Width="160" 
+                     Margin="0,0,20,0"
+                     Height="24"
+                     Style="{StaticResource TextBoxStyle1}" VerticalContentAlignment="Center"/>
+                    <TextBox x:Name="txt_urun_kodu" Width="160" 
+                     Margin="0,0,20,0"
+                     Height="24"
+                     Style="{StaticResource TextBoxStyle1}" VerticalContentAlignment="Center"/> 
+                    <TextBox x:Name="txt_ham_adi" Width="300" Style="{StaticResource TextBoxStyle1}" 
+                             Height="24"
+                             Margin="0,0,20,0"/>
+                    <TextBox x:Name="txt_metre" Width="70" Style="{StaticResource TextBoxStyle1}" 
+                      Height="24"
+                      Margin="0,0,0,0"/>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center"
+                            Grid.Row="4" Grid.Column="1"
+                            Margin="0,10,0,0">
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
+                                Margin="0,0,0,0">
+                        <Button HorizontalAlignment="Center"
+                                Content="Listele"
+                                Padding="35,5"
+                                Style="{StaticResource CustomButtonStyle}"
+                                Click="listele_click"
+                                x:Name="Listele"/>
+
+                        <Button HorizontalAlignment="Center"
+                                Content="Bildir"
+                                Padding="35,5"
+                                Background="DarkSeaGreen"
+                                Foreground="White"
+                                Style="{StaticResource CustomButtonStyle}"
+                                Click="btn_bildir_click"
+                                x:Name="btn_bildir"
+                                Visibility="Collapsed"/>
+
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
+                            Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="10"
+                            Margin="0,0,0,10">
+
+                        <Label x:Name="lbl_bos_liste" Content="Aramaya Ait Sonuç Bulunamadı." 
+                           Style="{StaticResource CustomLabelStyle4_16_b}" Margin="0" Padding="0" Width="auto" 
+                           Visibility="Collapsed"/>
+
+                    </StackPanel>
+                </StackPanel>
+
+                <DataGrid Grid.Row="5" Grid.Column="1" PreviewMouseLeftButtonDown="DataGrid_PreviewMouseLeftButtonDown"
+                      x:Name="gv_bildirim" DataContext="{StaticResource cls_isemri}" Style="{StaticResource DataGridStyle1}"
+                      CellStyle="{StaticResource DataGridCellStyle1}" 
+                      RowStyle="{StaticResource DataGridRowStyle1}"
+                      Margin="35 10">
+
+                    <DataGrid.Columns>
+
+                        <DataGridTextColumn IsReadOnly="False" Width="0" Visibility="Collapsed" Header="Reçete ID" Binding="{Binding ReceteID}" />
+                        <DataGridTextColumn IsReadOnly="False" Width="100" Header="Takip No" Binding="{Binding TAKIP_NO}" />
+                        <DataGridTextColumn IsReadOnly="False" Width="100" Header="Referans İşemri" Binding="{Binding REFISEMRINO}" />
+                        <DataGridTextColumn IsReadOnly="False" Width="100" Header="Ürün Kodu" Binding="{Binding URUN_KODU}" />
+                        <DataGridTextColumn IsReadOnly="False" Width="*" Header="Ürün Adı" Binding="{Binding URUN_ADI}" />
+                        <DataGridTextColumn IsReadOnly="False" Width="100" Header="İşemrino" Binding="{Binding ISEMRINO}" />
+                        <DataGridTextColumn IsReadOnly="False"  Width="100" Header="Yarı Mamul Kodu" Binding="{Binding STOK_KODU}" />
+                        <DataGridTextColumn IsReadOnly="False" Width="100" Header="Ham Kodu" Binding="{Binding HAM_KODU}"/>
+                        <DataGridTextColumn IsReadOnly="False" Width="*" Header="Ham Adı" Binding="{Binding HAM_ADI}" />
+                        <DataGridTextColumn IsReadOnly="False" Width="70" Header="Bildirilen İşemri Miktarı" Binding="{Binding BILDIRILEN_MIKTAR}" />
+                        <DataGridTextColumn IsReadOnly="False" Width="70" Header="Ham Bir. Mik" Binding="{Binding BIRIM_HAM_MIKTAR}" CellStyle="{StaticResource DataGridCellStyle1_Center}"/>
+                        <DataGridTextColumn IsReadOnly="False" Width="60" Header="Kullanılan Mik" Binding="{Binding TUKETILEN_MIKTAR}" CellStyle="{StaticResource DataGridCellStyle1_Center}"/>
+                        <DataGridCheckBoxColumn Width="60" Binding="{Binding IsChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                CanUserResize="False">
+                            <DataGridCheckBoxColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <CheckBox x:Name="IsChecked" IsChecked="{Binding IsChecked, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Click="ToggleHeaderCheckBox" />
+                                </DataTemplate>
+                            </DataGridCheckBoxColumn.HeaderTemplate>
+                        </DataGridCheckBoxColumn>
+
+                    </DataGrid.Columns>
+                    <DataGrid.ColumnHeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="VerticalContentAlignment" Value="Center"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Foreground" Value="#25274d"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Margin" Value="0 5 0 5"/>
+                            <Setter Property="ContentTemplate">
+                                <Setter.Value>
+                                    <DataTemplate>
+                                        <TextBlock TextWrapping="Wrap" Text="{Binding}" Margin="5"/>
+                                    </DataTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DataGrid.ColumnHeaderStyle>
+                </DataGrid>
+
+            </Grid>
+
+
+        </Border>
+    </Border>
+</Window>
+
