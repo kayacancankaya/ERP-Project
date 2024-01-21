@@ -1,0 +1,98 @@
+﻿<Window x:Class="Layer_UI.Ahsap.Irsaliye.Popup_Irsaliye_Cari_Secim"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Layer_UI.Ahsap.Irsaliye"
+        xmlns:vm="clr-namespace:Layer_Business;assembly=Layer_Business"
+        mc:Ignorable="d"
+        Title="Cari Seçim" Width="635">
+    <Window.Resources>
+        <vm:Cls_Cari x:Key="cls_cari"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource cls_cari}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1"
+                    Margin="10">
+            <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                <TextBlock Text="Cari Kodu" Foreground="{StaticResource b_r_one}"
+                           FontWeight="Bold" Padding="0 3 0 0" 
+                           TextAlignment="Center"
+                           Width="130"
+                           Height="20"/>
+                <TextBlock Text="Cari İsim" Foreground="{StaticResource b_r_one}"
+                           FontWeight="Bold" Padding="0 3 0 0" 
+                           TextAlignment="Center"
+                           Width="350"
+                           Height="20"
+                           Margin="30 0 0 0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Text="{Binding TeslimCariKodu, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" 
+                         Width="130"
+                         TextAlignment="Center"
+                         x:Name="txt_tedarik_cari_kodu"/>
+                <TextBox Text="{Binding TeslimCariAdi, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" 
+                         Width="350"
+                         TextAlignment="Center"
+                         Margin="30 0 0 0"
+                         x:Name="txt_tedarik_cari_adi"/>
+                <Button Content="Listele" Click="btn_tedarik_cari_listele_clicked"
+                        Width="60"
+                        Margin="30 0 0 0"/>
+            </StackPanel>
+        </StackPanel>
+
+        <DataGrid x:Name="dg_SipariseCariBaglaTedarikCari" DataContext="{StaticResource cls_cari}"
+                          Style="{StaticResource DataGridStyle1}"
+                          CellStyle="{StaticResource DataGridCellStyle1}"
+                          RowStyle="{StaticResource DataGridRowStyle1}"
+                          ItemsSource="{Binding SipariseCariBaglaCollection}"
+                          Grid.Column="1" Grid.Row="2">
+
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn  Width="20" Header="" Binding="{Binding IsChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTextColumn Width="130" Header="Cari Kodu" Binding="{Binding TeslimCariKodu, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                <DataGridTextColumn Width="350" Header="Cari Adı" Binding="{Binding TeslimCariAdi, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                <DataGridTextColumn Width="40" Header="Ülke Kodu" Binding="{Binding UlkeKodu, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            </DataGrid.Columns>
+
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="Foreground" Value="#25274d"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="Margin" Value="0 5 0 5"/>
+                    <Setter Property="ContentTemplate">
+                        <Setter.Value>
+                            <DataTemplate>
+                                <TextBlock TextWrapping="Wrap" Text="{Binding}" Margin="5"/>
+                            </DataTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+        </DataGrid>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="1"
+                    HorizontalAlignment="Right">
+
+            <Button Content="Kaydet" Click="btn_tedarikci_kaydet_clicked"
+              Width="60"
+              Margin="0 0 0 0"/>
+        </StackPanel>
+    </Grid>
+</Window>

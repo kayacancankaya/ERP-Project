@@ -1,0 +1,131 @@
+﻿<Window x:Class="Layer_UI.Kalite_Doseme.Frm_Ahsaptan_Gelen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        xmlns:vm="clr-namespace:Layer_Business;assembly=Layer_Business"
+        xmlns:uc="clr-namespace:Layer_UI.UserControls"
+        WindowStyle="None"
+        ResizeMode="CanResize"
+        WindowState="Maximized" MinWidth="930"   
+        WindowStartupLocation="CenterScreen"
+        MouseDown="mousedown_Window"
+        Background="Transparent"
+        AllowsTransparency="True">
+
+    <Border CornerRadius="50">
+        <Border.Background>
+            <ImageBrush ImageSource="\\192.168.1.11\Netsis\Images\vbBg.jpeg"/>
+        </Border.Background>
+        <Border CornerRadius="50"
+            BorderThickness="2"
+            Opacity="0.95">
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="{StaticResource b_r_four_color}" Offset="0"/>
+                    <GradientStop Color="{StaticResource b_r_four_contrast}" Offset="0.5"/>
+                    <GradientStop Color="{StaticResource b_r_four_color}" Offset="1"/>
+
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,1">
+                    <GradientStop Color="{StaticResource b_r_one_color}" Offset="0"/>
+                    <GradientStop Color="{StaticResource b_r_one_color_lighter}" Offset="0.75"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid  VerticalAlignment="Top"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="5"/>
+                    
+                </Grid.ColumnDefinitions>
+                <uc:UserControl_Menu Grid.Row="0" Grid.Column="1" Margin="20 0 30 0" 
+                                     x:Name="menu_top_bar" Title="AHŞAPTAN GELEN" />
+
+
+                <WrapPanel Margin="0,30,0,0" HorizontalAlignment="Center" 
+                    Grid.Row="1" Grid.Column="1" 
+                    Orientation="Horizontal"
+                    >
+                    <Label Content="Ürün Kodu:" 
+                   Style="{StaticResource CustomLabelStyle4_16_b}"
+                           Margin="15 0 10 0"
+                           Padding="0"/>
+                    <TextBox x:Name="txt_urun_kodu" Style="{StaticResource TextBoxStyle1}"
+                             Width="120" 
+                             Height="23"
+                             />
+                    <Label Content="Ürün Adı:" 
+                   Style="{StaticResource CustomLabelStyle4_16_b}"
+                           Margin="35 0 10 0"
+                           Padding="0"/>
+                    <TextBox x:Name="txt_urun_adi" Style="{StaticResource TextBoxStyle1}"
+                             Width="200"
+                             Height="23"/>
+                    <Label Content="Ham Kodu:" 
+                   Style="{StaticResource CustomLabelStyle4_16_b}"
+                           Margin="35 0 10 0"
+                           Padding="0"/>
+                    <TextBox x:Name="txt_ham_kodu" Style="{StaticResource TextBoxStyle1}"
+                             Width="120" 
+                             Height="23"
+                             />
+                    <Label Content="Ham Adı:" 
+                   Style="{StaticResource CustomLabelStyle4_16_b}"
+                           Margin="35 0 10 0"
+                           Padding="0"/>
+                    <TextBox x:Name="txt_ham_adi" Style="{StaticResource TextBoxStyle1}"
+                             Width="200"
+                             Height="23"
+                             Margin="0 0 15 0"/>
+                    
+                </WrapPanel>
+                
+
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center"
+                    Grid.Row="2" Grid.Column="1" 
+                    Margin="0,10,0,0">
+                    <Button HorizontalAlignment="Center"
+                            Content="Listele"
+                            Padding="35,5"
+                            Style="{StaticResource ButtonSyle43l1_12_Montserrat}"
+                            Click="listele_click"
+                            x:Name="Listele"
+                            />
+                    <Label Content="Sonuç Bulunamadı..." Visibility="Hidden" x:Name="lbl_uyari"
+                           Style="{StaticResource CustomLabelStyle4_16_b}"></Label>
+                </StackPanel>
+
+                <DataGrid AutoGenerateColumns="False" 
+                  Grid.Row="3" 
+                  Grid.Column="1" 
+                  Margin="30 10"
+                  x:Name="dg_genel_durum"
+                  VerticalScrollBarVisibility="Visible"
+                  >
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Ürün Kodu" Width="*" Binding="{Binding Urun_Kodu}"/>
+                        <DataGridTextColumn Header="Ürün Adı" Width="*" Binding="{Binding Urun_Adi}"/>
+                        <DataGridTextColumn Header="Yarı Mamul Kodu" Width="*" Binding = "{Binding Yari_Mamul_Kodu}"/>
+                        <DataGridTextColumn Header="Yarı Mamul Adı" Width="*" Binding = "{Binding  Yari_Mamul_Adi}"/>
+                        <DataGridTextColumn Header="Ham Kodu" Width="*" Binding = "{Binding Ham_Kodu}"/>
+                        <DataGridTextColumn Header="Ham Adı" Width="*" Binding = "{Binding Ham_Adi}"/>
+                    </DataGrid.Columns>
+
+                </DataGrid>
+
+
+            </Grid>
+        </Border>
+    </Border>
+</Window>

@@ -1,0 +1,288 @@
+﻿<Window x:Class="Layer_UI.Arge.Mamul_Turetme.Popup_Ozellik_Ekle"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Layer_UI.Satis.Siparis.Popups"
+        xmlns:ui="clr-namespace:Layer_UI.Methods"
+        xmlns:vm="clr-namespace:Layer_Business;assembly=Layer_Business"
+        mc:Ignorable="d"
+        Title="Özellik Ekle" Width="700">
+    <Window.Resources>
+        <vm:Cls_Cari x:Key="cls_cari"/>
+        <vm:Cls_Siparis x:Key="cls_siparis"/>
+    </Window.Resources>
+
+
+    <Grid Margin="30,5" DataContext="vm">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="0 20 0 0" Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+
+                <TextBlock Text="Kod:" HorizontalAlignment="Left" 
+                               VerticalAlignment="Center"
+                               Margin="0 0 0 0"
+                               FontWeight="Bold"
+                           Width="40"/>
+                <TextBlock Text="İsim:" HorizontalAlignment="Left" 
+                               VerticalAlignment="Center"
+                               Margin="30 0 0 0"
+                               FontWeight="Bold"
+                           Width="210"/>
+                <TextBlock Text="Sıra:" HorizontalAlignment="Left" 
+                               VerticalAlignment="Center"
+                               Margin="30 0 0 0"
+                               FontWeight="Bold"
+                           Width="40"/>
+                <TextBlock Text="Kilit:" HorizontalAlignment="Left" 
+                               VerticalAlignment="Center"
+                               Margin="30 0 0 0"
+                               FontWeight="Bold"
+                           Width="60"/>
+
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 3 0 0">
+
+                <TextBox 
+                                Style="{StaticResource TextBoxStyle431_12}"
+                                Margin="0 0 0 0"
+                                 Width="40"
+                                 Height="25"
+                               x:Name="txt_kod"/>
+                <TextBox 
+                                Style="{StaticResource TextBoxStyle431_12}"
+                                Margin="30 0 0 0"
+                                 Width="210"
+                                 Height="25"
+                               x:Name="txt_isim"/>
+                <TextBox 
+                                Style="{StaticResource TextBoxStyle431_12}"
+                                Margin="30 0 0 0"
+                                 Width="40"
+                                 Height="25"
+                                 x:Name="txt_sira"
+                                ui:UIinteractions.AllowNumberInput="True"/>
+                <ComboBox Margin="30 0 0 0"
+                          Width="60"
+                          x:Name="cbx_kilit"
+                          Style="{StaticResource ComboboxStyle535_14_montserrat_semibold}">
+                    <ComboBoxItem Content="H"/>
+                    <ComboBoxItem Content="E"/>
+                </ComboBox>
+
+
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1" Margin="0 20 0 0" Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+
+                <TextBlock Text="Kod1:" HorizontalAlignment="Left" 
+                VerticalAlignment="Center"
+                Margin="0 0 0 0"
+                FontWeight="Bold"
+            Width="100"/>
+                <TextBlock Text="Kod2:" HorizontalAlignment="Left" 
+                VerticalAlignment="Center"
+                Margin="30 0 0 0"
+                FontWeight="Bold"
+            Width="100"/>
+                <TextBlock Text="Kod3:" HorizontalAlignment="Left" 
+                VerticalAlignment="Center"
+                Margin="30 0 0 0"
+                FontWeight="Bold"
+            Width="100"/>
+                <TextBlock Text="Kod4:" HorizontalAlignment="Left" 
+                VerticalAlignment="Center"
+                Margin="30 0 0 0"
+                FontWeight="Bold"
+            Width="100"/>
+                <TextBlock Text="Kod5:" HorizontalAlignment="Left" 
+                VerticalAlignment="Center"
+                Margin="30 0 0 0"
+                FontWeight="Bold"
+            Width="100"/>
+
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 3 0 0">
+
+                <TextBox 
+                 Style="{StaticResource TextBoxStyle431_12}"
+                 Margin="0 0 0 0"
+                  Width="100"
+                  Height="25"
+                x:Name="txt_kod1"/>
+                <TextBox 
+                 Style="{StaticResource TextBoxStyle431_12}"
+                 Margin="30 0 0 0"
+                  Width="100"
+                  Height="25"
+                x:Name="txt_kod2"/>
+                <TextBox 
+                 Style="{StaticResource TextBoxStyle431_12}"
+                 Margin="30 0 0 0"
+                  Width="100"
+                  Height="25"
+                x:Name="txt_kod3"/>
+                <TextBox 
+                 Style="{StaticResource TextBoxStyle431_12}"
+                 Margin="30 0 0 0"
+                  Width="100"
+                  Height="25"
+                x:Name="txt_kod4"/>
+                <TextBox 
+                 Style="{StaticResource TextBoxStyle431_12}"
+                 Margin="30 0 0 0"
+                  Width="100"
+                  Height="25"
+                x:Name="txt_kod5"/>
+
+
+            </StackPanel>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Grid.Column="1" 
+                    Margin="0 20 0 0" 
+                    Orientation="Vertical"
+                    x:Name="stack_panel_collapsed"
+                    Visibility="Collapsed">
+            <StackPanel Orientation="Horizontal">
+
+                <TextBlock Text="Muh Detay:" HorizontalAlignment="Left" 
+                       VerticalAlignment="Center"
+                       Margin="0 0 0 0"
+                       FontWeight="Bold"
+                   Width="50"/>
+                <TextBlock Text="Teslim Günü:" HorizontalAlignment="Left" 
+                       VerticalAlignment="Center"
+                       Margin="30 0 0 0"
+                       FontWeight="Bold"
+                   Width="50"/>
+                <TextBlock Text="Kdv:" HorizontalAlignment="Left" 
+                       VerticalAlignment="Center"
+                       Margin="30 0 0 0"
+                       FontWeight="Bold"
+                   Width="40"/>
+                <TextBlock Text="Takım Kod:" HorizontalAlignment="Left" 
+                       VerticalAlignment="Center"
+                       Margin="30 0 0 0"
+                       FontWeight="Bold"
+                   Width="40"/>
+                <TextBlock Text="Ünite Kod:" HorizontalAlignment="Left" 
+                       VerticalAlignment="Center"
+                       Margin="30 0 0 0"
+                       FontWeight="Bold"
+                   Width="40"/>
+                <TextBlock Text="Tür:" HorizontalAlignment="Left" 
+                       VerticalAlignment="Center"
+                       Margin="30 0 0 0"
+                       FontWeight="Bold"
+                   Width="40"/>
+                <TextBlock Text="Menü Grup:" HorizontalAlignment="Left" 
+                       VerticalAlignment="Center"
+                       Margin="30 0 0 0"
+                       FontWeight="Bold"
+                   Width="70"/>
+                <TextBlock Text="Sayfa:" HorizontalAlignment="Left" 
+                       VerticalAlignment="Center"
+                       Margin="30 0 0 0"
+                       FontWeight="Bold"
+                   Width="70"/>
+
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 3 0 0">
+
+                <TextBox 
+                        Style="{StaticResource TextBoxStyle431_12}"
+                        Margin="0 0 0 0"
+                         Width="50"
+                         Height="25"
+                       x:Name="txt_muhdetay"
+                 ui:UIinteractions.AllowNumberInput="True"/>
+                <TextBox
+                        Style="{StaticResource TextBoxStyle431_12}"
+                        Margin="30 0 0 0"
+                         Width="50"
+                         Height="25"
+                       x:Name="txt_teslim_gunu"
+                 ui:UIinteractions.AllowNumberInput="True"/>
+                <TextBox 
+                        Style="{StaticResource TextBoxStyle431_12}"
+                        Margin="30 0 0 0"
+                         Width="40"
+                         Height="25"
+                       x:Name="txt_kdv"
+                 ui:UIinteractions.AllowNumberInput="True"/>
+                <TextBox 
+                        Style="{StaticResource TextBoxStyle431_12}"
+                        Margin="30 0 0 0"
+                         Width="40"
+                         Height="25"
+                       x:Name="txt_takim_kod"
+                 ui:UIinteractions.AllowNumberInput="True"/>
+                <TextBox 
+                        Style="{StaticResource TextBoxStyle431_12}"
+                        Margin="30 0 0 0"
+                         Width="40"
+                         Height="25"
+                       x:Name="txt_unite_kodu"
+                 ui:UIinteractions.AllowNumberInput="True"/>
+                <TextBox 
+                        Style="{StaticResource TextBoxStyle431_12}"
+                        Margin="30 0 0 0"
+                         Width="40"
+                         Height="25"
+                       x:Name="txt_tur"
+                 />
+                <TextBox 
+                        Style="{StaticResource TextBoxStyle431_12}"
+                        Margin="30 0 0 0"
+                         Width="70"
+                         Height="25"
+                       x:Name="txt_menu_grup"
+                 />
+                <TextBox 
+                        Style="{StaticResource TextBoxStyle431_12}"
+                        Margin="30 0 0 0"
+                         Width="70"
+                         Height="25"
+                       x:Name="txt_sayfa"
+                 />
+
+
+            </StackPanel>
+         
+        </StackPanel>
+        
+       
+        <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="1"
+                            HorizontalAlignment="Center" VerticalAlignment="Top" 
+                            x:Name="stack_panel_kaydet">
+
+            <Button Content="Kaydet" Click="btn_kaydet_clicked"
+                            Width="80" Height="35"
+                    
+                            Style="{StaticResource CustomButtonStyle}"/>
+
+        </StackPanel>
+
+
+    </Grid>
+
+</Window>

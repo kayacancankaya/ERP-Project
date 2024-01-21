@@ -1,0 +1,67 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Layer_UI/1.0.0": {
+        "dependencies": {
+          "Layer_2_Common": "1.0.0.0",
+          "Layer_Business": "1.0.0.0",
+          "Layer_Data": "1.0.0.0"
+        },
+        "runtime": {
+          "Layer_UI.dll": {}
+        }
+      },
+      "Layer_2_Common/1.0.0.0": {
+        "runtime": {
+          "Layer_2_Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Layer_Business/1.0.0.0": {
+        "runtime": {
+          "Layer_Business.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Layer_Data/1.0.0.0": {
+        "runtime": {
+          "Layer_Data.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Layer_UI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Layer_2_Common/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Layer_Business/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Layer_Data/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

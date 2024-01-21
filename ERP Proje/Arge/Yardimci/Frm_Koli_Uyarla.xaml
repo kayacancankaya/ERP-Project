@@ -1,0 +1,159 @@
+﻿<Window x:Class="Layer_UI.Arge.Yardimci.Frm_Koli_Uyarla"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        xmlns:vm="clr-namespace:Layer_Business;assembly=Layer_Business"
+        xmlns:uc="clr-namespace:Layer_UI.UserControls"
+        xmlns:ui="clr-namespace:Layer_UI.Methods"
+        WindowStyle="None"
+        ResizeMode="CanResize"
+        WindowState="Maximized" MinWidth="930"   
+        WindowStartupLocation="CenterScreen"
+        MouseDown="mousedown_Window"
+        Background="Transparent"
+        AllowsTransparency="True"
+        x:Name="window_siparis">
+    <Window.Resources>
+        <vm:Cls_Cari x:Key="cls_arge"/>
+    </Window.Resources>
+
+    <Border CornerRadius="50">
+        <Border.Background>
+            <ImageBrush ImageSource="\\192.168.1.11\Netsis\Images\vbBg.jpeg"/>
+        </Border.Background>
+        <Border CornerRadius="50"
+            BorderThickness="2"
+            Opacity="0.95">
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="{StaticResource b_r_four_color}" Offset="0"/>
+                    <GradientStop Color="{StaticResource b_r_four_contrast}" Offset="0.5"/>
+                    <GradientStop Color="{StaticResource b_r_four_color}" Offset="1"/>
+
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,1">
+                    <GradientStop Color="{StaticResource b_r_one_color}" Offset="0"/>
+                    <GradientStop Color="{StaticResource b_r_one_color_lighter}" Offset="0.75"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid Margin="30,5" DataContext="vm">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="1*" MaxHeight="125"/>
+                    <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="5"/>
+                </Grid.ColumnDefinitions>
+
+                <uc:UserControl_Menu Grid.Row="0" Grid.Column="1" 
+                                     x:Name="menu_top_bar"
+                                     Title="KOLİ UYARLA" />
+                 <StackPanel Grid.Row="1" Grid.Column="1"
+                            Orientation="Vertical" Margin="0 25 0 0">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock Text="Boy" HorizontalAlignment="Left" VerticalAlignment="Center"
+                                   Style="{StaticResource TextBlockStyle_16_Bold_4}"
+                                   Padding="5 0 0 0"
+                                   Width="120"/>
+                        <TextBlock Text="En" HorizontalAlignment="Left" VerticalAlignment="Center"
+                                   Style="{StaticResource TextBlockStyle_16_Bold_4}"
+                                   Margin="30 0 0 0"
+                                   Padding="5 0 0 0"
+                                   Width="120"/>
+                        <TextBlock Text="Yükseklik" HorizontalAlignment="Left" VerticalAlignment="Center"
+                                   Style="{StaticResource TextBlockStyle_16_Bold_4}"
+                                   Margin="30 0 0 0"
+                                   Padding="5 0 0 0"
+                                   Width="120"/>
+                       </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBox 
+                                 Text="{Binding UrunTipi}" HorizontalAlignment="Left" VerticalAlignment="Center"
+                                 Style="{StaticResource TextBoxStyle431_12}"
+                                 Width="120"
+                                 Margin="0 0 0 0"
+                                 FontSize="16"
+                                 x:Name="txt_boy"
+                                 ui:UIinteractions.AllowNumberInput="True"/>
+                        <TextBox 
+                                 Text="{Binding Model}" HorizontalAlignment="Left" VerticalAlignment="Center"
+                                 Style="{StaticResource TextBoxStyle431_12}"
+                                 Margin="30 0 0 0"
+                                 FontSize="16"
+                                 Width="120"
+                                 x:Name="txt_en"
+                                 ui:UIinteractions.AllowNumberInput="True"/>
+                        <TextBox 
+                                 Text="{Binding SatisSekil}" HorizontalAlignment="Left" VerticalAlignment="Center"
+                                 Style="{StaticResource TextBoxStyle431_12}"
+                                 Margin="30 0 0 0"
+                                 FontSize="16"
+                                 Width="120"
+                                 x:Name="txt_yukseklik"
+                                 ui:UIinteractions.AllowNumberInput="True"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Style="{StaticResource ButtonSyle43l1_12_Montserrat}" Content="Listele" Width="80"
+                                Click="btn_recete_listele_clicked"/>
+                    </StackPanel>
+
+                </StackPanel>
+                <DataGrid x:Name="dg_StokKarti" DataContext="{StaticResource cls_arge}"
+                          Style="{StaticResource DataGridStyle1}"
+                          CellStyle="{StaticResource DataGridCellStyle1}"
+                          RowStyle="{StaticResource DataGridRowStyle1}"
+                          ItemsSource="{Binding SipariseCariBaglaCollection}"
+                          Grid.Column="1" Grid.Row="2">
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Width="130" Header="Stok Kodu" Binding="{Binding YariMamulKodu, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <DataGridTextColumn Width="350" Header="Stok Adı" Binding="{Binding YariMamulAdi, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <DataGridTextColumn Width="130" Header="Ham Kodu" Binding="{Binding HamKodu, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <DataGridTextColumn Width="350" Header="Ham Adı" Binding="{Binding HamAdi, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <DataGridTextColumn Width="50" Header="Miktar" Binding="{Binding M2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                    </DataGrid.Columns>
+
+                    <DataGrid.ColumnHeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="VerticalContentAlignment" Value="Center"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Foreground" Value="#25274d"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Margin" Value="0 5 0 5"/>
+                            <Setter Property="ContentTemplate">
+                                <Setter.Value>
+                                    <DataTemplate>
+                                        <TextBlock TextWrapping="Wrap" Text="{Binding}" Margin="5"
+                                                   />
+                                    </DataTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DataGrid.ColumnHeaderStyle>
+                </DataGrid>
+                <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="1"
+                            HorizontalAlignment="Right" Visibility="Collapsed"
+                            Margin="0"
+                            x:Name="stack_panel_recete_kaydet">
+
+                    <Button Content="Kaydet" Click="btn_stok_kaydet_clicked"
+                            Width="80" Height="35"
+                            Style="{StaticResource CustomButtonStyle}"/>
+
+                </StackPanel>
+
+
+            </Grid>
+        </Border>
+    </Border>
+
+</Window>
